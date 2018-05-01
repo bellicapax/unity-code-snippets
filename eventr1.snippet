@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>eventr1</Title>
+      <Author>[USERNAME]</Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>eventr1</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>privateEvent</ID>
+          <ToolTip>privateEvent</ToolTip>
+          <Default>privateEvent</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>publicEvent</ID>
+          <ToolTip>publicEvent</ToolTip>
+          <Default>publicEvent</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>type1</ID>
+          <ToolTip>type1</ToolTip>
+          <Default>type1</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>var1</ID>
+          <ToolTip>var1</ToolTip>
+          <Default>var1</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[private event System.Action<$type1$> $privateEvent$;
+public event System.Action<$type1$> $publicEvent$ { add { $privateEvent$ += value; } remove { $privateEvent$ -= value; } }
+protected void Raise$publicEvent$($type1$ $var1$) { if ($privateEvent$ != null) $privateEvent$($var1$); }]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

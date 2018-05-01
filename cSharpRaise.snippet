@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Raise</Title>
+      <Author>Eris Koleszar</Author>
+      <Description />
+      <HelpUrl></HelpUrl>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Keywords>
+        <Keyword></Keyword>
+      </Keywords>
+      <Shortcut>raise</Shortcut>
+    </Header>
+    <Snippet>
+      <References />
+      <Imports />
+      <Declarations>
+        <Literal Editable="true">
+          <ID>privateEvent</ID>
+          <ToolTip>Name of private event</ToolTip>
+          <Default>privateEvent</Default>
+          <Function />
+        </Literal>
+        <Literal Editable="true">
+          <ID>ThisEvent</ID>
+          <ToolTip>Name of event</ToolTip>
+          <Default>ThisEvent</Default>
+          <Function />
+        </Literal>
+      </Declarations>
+      <Code Language="CSharp" Kind="method body" Delimiter="$"><![CDATA[private void Raise$ThisEvent$() { if($privateEvent$ != null) { $privateEvent$(); } }]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

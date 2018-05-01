@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>event4</Title>
+      <Author>[USERNAME]</Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>event4</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>type1</ID>
+          <ToolTip>type1</ToolTip>
+          <Default>type1</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>type2</ID>
+          <ToolTip>type2</ToolTip>
+          <Default>type2</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>privateName</ID>
+          <ToolTip>privateName</ToolTip>
+          <Default>privateName</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>publicName</ID>
+          <ToolTip>publicName</ToolTip>
+          <Default>publicName</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>type3</ID>
+          <ToolTip>type3</ToolTip>
+          <Default>type3</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>type4</ID>
+          <ToolTip>type4</ToolTip>
+          <Default>type4</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[private event System.Action<$type1$, $type2$, $type3$, $type4$> $privateName$;
+public event System.Action<$type1$, $type2$, $type3$, $type4$> $publicName$ { add { $privateName$ += value; } remove { $privateName$ -= value; } }]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

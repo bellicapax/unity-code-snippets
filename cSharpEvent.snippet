@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Keywords>
+        <Keyword>
+        </Keyword>
+      </Keywords>
+      <Title>Event</Title>
+      <Author>Eris Koleszar</Author>
+      <Description>Privately backed public event</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>event</Shortcut>
+    </Header>
+    <Snippet>
+      <References />
+      <Imports />
+      <Declarations>
+        <Literal Editable="true">
+          <ID>types</ID>
+          <ToolTip>Types To Return</ToolTip>
+          <Default>types</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>privateName</ID>
+          <ToolTip>Name of Private Event</ToolTip>
+          <Default>privateName</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>publicName</ID>
+          <ToolTip>Name of Public Event</ToolTip>
+          <Default>publicName</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Kind="type decl" Delimiter="$"><![CDATA[private event System.Action $privateName$;
+public event System.Action $publicName$ { add { $privateName$ += value; } remove { $privateName$ -= value; } }]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

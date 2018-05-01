@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>eventr3</Title>
+      <Author>[USERNAME]</Author>
+      <Description>
+      </Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>eventr3</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal Editable="true">
+          <ID>type1</ID>
+          <ToolTip>type1</ToolTip>
+          <Default>type1</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>type2</ID>
+          <ToolTip>type2</ToolTip>
+          <Default>type2</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>privateEvent</ID>
+          <ToolTip>privateEvent</ToolTip>
+          <Default>privateEvent</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>publicEvent</ID>
+          <ToolTip>publicEvent</ToolTip>
+          <Default>publicEvent</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>var1</ID>
+          <ToolTip>var1</ToolTip>
+          <Default>var1</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>var2</ID>
+          <ToolTip>var2</ToolTip>
+          <Default>var2</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>type3</ID>
+          <ToolTip>type3</ToolTip>
+          <Default>type3</Default>
+          <Function>
+          </Function>
+        </Literal>
+        <Literal Editable="true">
+          <ID>var3</ID>
+          <ToolTip>var3</ToolTip>
+          <Default>var3</Default>
+          <Function>
+          </Function>
+        </Literal>
+      </Declarations>
+      <Code Language="csharp" Delimiter="$"><![CDATA[private event System.Action<$type1$, $type2$, $type3$> $privateEvent$;
+public event System.Action<$type1$, $type2$, $type3$> $publicEvent$ { add { $privateEvent$ += value; } remove { $privateEvent$ -= value; } }
+protected void Raise$publicEvent$($type1$ $var1$, $type2$ $var2$, $type3$ $var3$) { if ($privateEvent$ != null) $privateEvent$($var1$, $var2$, $var3$); }]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
