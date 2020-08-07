@@ -5,32 +5,26 @@
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
-      <Title>inject</Title>
-      <Author>[USERNAME]</Author>
+      <Title>DebugLogFormat</Title>
+      <Author>
+      </Author>
       <Description>
       </Description>
       <HelpUrl>
       </HelpUrl>
-      <Shortcut>inj</Shortcut>
+      <Shortcut>df</Shortcut>
     </Header>
     <Snippet>
       <Declarations>
         <Literal Editable="true">
-          <ID>type</ID>
-          <ToolTip>type</ToolTip>
-          <Default>type</Default>
-          <Function>
-          </Function>
-        </Literal>
-        <Literal Editable="true">
-          <ID>var</ID>
-          <ToolTip>var</ToolTip>
-          <Default>var</Default>
+          <ID>text</ID>
+          <ToolTip>text</ToolTip>
+          <Default>text</Default>
           <Function>
           </Function>
         </Literal>
       </Declarations>
-      <Code Language="csharp" Delimiter="$"><![CDATA[[Inject] public $type$ _$var$ { get; private set; }]]></Code>
+      <Code Language="csharp" Delimiter="$"><![CDATA[Debug.LogFormat("$text$ {0}");]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

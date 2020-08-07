@@ -38,7 +38,7 @@
         </Literal>
       </Declarations>
       <Code Language="csharp" Delimiter="$"><![CDATA[private event System.Action<$type$> $privateName$;
-public event System.Action<$type$> $publicName$ { add { $privateName$ += value; } remove { $privateName$ -= value; } }]]></Code>
+public event System.Action<$type$> $publicName$ { add => $privateName$ += value; remove => $privateName$ -= value; }]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
